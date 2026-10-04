@@ -1,4 +1,4 @@
-# RappiPlus: de datos a decisiones de negocio
+# RappiPlus — Desempeño comercial
 
 **Mario Alberto Vivero Sahagún | Power BI · Python · SQL**
 
