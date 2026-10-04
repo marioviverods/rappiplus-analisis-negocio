@@ -1,12 +1,20 @@
 # RappiPlus: de datos a decisiones de negocio
 
-**Mario Alberto Vivero | Power BI · Python · SQL**
+**Mario Alberto Vivero Sahagún | Power BI · Python · SQL**
 
-Proyecto académico de análisis comercial: ventas, costos de producto, gasto de marketing y exploración del comportamiento de usuarios. Incluye evidencia de un dashboard de dos vistas en Power BI y una revisión reproducible de los datos que lo sustentan. No representa un encargo comercial de Rappi.
+Análisis comercial de ventas, costos de producto y gasto de marketing de enero a junio de 2025, con un dashboard de dos vistas en Power BI y una validación de los indicadores con Python.
 
 ## Pregunta de negocio
 
 ¿Qué productos y periodos concentran los ingresos, y qué tan confiables son los indicadores para apoyar decisiones comerciales?
+
+## Hallazgo clave
+
+- **Diez pedidos concentran el 86.83% del revenue.** Tienen entre 10,000 y 20,000 unidades cada uno, y hay que validarlos antes de usar los promedios para planear inventario.
+- **Electrónica lidera el revenue y el beneficio bruto conocido**, pero su posición depende de esos pedidos y no implica que tenga el mejor margen.
+- **Febrero es el mes con más revenue y abril el de menos.**
+
+**Qué recomiendo:** validar los diez pedidos de gran volumen y completar los productos y canales sin dato antes de planear compras o promociones.
 
 ## Resultados reproducidos con los CSV adjuntos
 
