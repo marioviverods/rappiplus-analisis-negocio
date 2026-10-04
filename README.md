@@ -36,7 +36,7 @@ Importes en unidades monetarias del ejercicio; moneda y comparabilidad entre pa�
 - **Diez pedidos concentran 86.83% del revenue.** Tienen entre 10,000 y 20,000 unidades cada uno y requieren validación antes de usar los promedios para planear inventario.
 - **Electrónica lidera el revenue y el beneficio bruto conocido**, pero su posición depende fuertemente de esos pedidos. No implica que tenga el mejor margen porcentual ni que se deba aumentar inversión.
 - **Febrero tiene el mayor revenue mensual; abril el menor.** Mayo se recupera y junio queda por debajo de mayo. La evolución no debe describirse como un pico conjunto de febrero–marzo.
-- **El dashboard histórico y el CSV limpio pertenecen a estados distintos del análisis.** Se documentan ambos para evitar mezclar cifras.
+
 
 ![Revenue mensual y acumulado recalculados](images/revenue_validado.png)
 
@@ -46,7 +46,7 @@ Las siguientes capturas se extrajeron de los notebooks aportados. Son evidencia 
 
 ### Overview ejecutivo
 
-Tarjetas, evolución mensual y comparación por categoría. La captura muestra revenue de 51.99 millones y profit de 8.86 millones; **no son los totales recalculados de la tabla anterior**. La línea rotulada YTD desciende entre meses y requiere revisión de medida y contexto de fechas.
+Tarjetas, evolución mensual y comparación por categoría. Esta captura corresponde a una versión anterior del dashboard: sus totales (51.99 millones de revenue y 8.86 millones de profit) difieren de los recalculados con los CSV actuales. **Las cifras de este README son las recalculadas.** La línea rotulada YTD desciende entre meses, por lo que su medida y su contexto de fechas conviene revisarlos.
 
 ![Overview original](images/dashboard_original_1.png)
 
@@ -66,9 +66,11 @@ Tabla de productos, cantidad, importe y profit con formato condicional, gráfico
 4. Sumar marketing independientemente para evitar multiplicarlo al unirlo a cada pedido.
 5. Recalcular KPIs, analizar concentración y comparar ingreso mensual con acumulado anual.
 
-Los tres CSV se conservan sin modificaciones. La revisión ejecutable añade controles y conciliación; no pretende haber actualizado el archivo Power BI original.
+Los tres CSV se conservan sin modificaciones. El notebook de validación añade controles de calidad y una conciliación de los KPIs; no actualiza el archivo de Power BI original.
 
-## Calidad y límites
+## Calidad de datos y limitaciones
+
+Proyecto académico presentado como caso de análisis; no representa un encargo comercial de Rappi.
 
 - 21 pedidos sin producto identificable representan 6,441.07 de revenue; sus costos quedan desconocidos.
 - Hay 218 pedidos sin país, 16 sin dispositivo y 21 sin fuente de referencia. Los nombres terminados en `_clean` no garantizan ausencia de nulos.
